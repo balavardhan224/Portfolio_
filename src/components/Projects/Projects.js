@@ -38,7 +38,7 @@ function Projects() {
               isBlog={false}
               title="Portfolio Webpage"
               description="Built a responsive React site to showcase verified projects, education, and skill ratings with custom styling for user engagement.."
-              ghLink="https://github.com/balavardhan224/portfolio"
+              ghLink="https://github.com/balavardhan224/Portfolio_"
               //demoLink="https://medium-app-ashy.vercel.app/signup"
             />
           </Col>
