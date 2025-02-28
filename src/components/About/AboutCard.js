@@ -35,9 +35,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Then I better make the most of today"{" "}
+            "Day by day, you’re growing stronger—keep pushing further. "{" "}
           </p>
-          <footer className="blockquote-footer">Turbo</footer>
+          <footer className="blockquote-footer">Bala</footer>
         </blockquote>
       </Card.Body>
     </Card>

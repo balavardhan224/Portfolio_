@@ -25,17 +25,17 @@
 //   return (
 //     <Container fluid className="resume-section">
 //       <Particle />
-//       <Row style={{ justifyContent: "center", position: "relative" }}>
-//         <Button
-//           variant="primary"
-//           href={pdf}
-//           target="_blank"
-//           style={{ maxWidth: "250px" }}
-//         >
-//           <AiOutlineDownload />
-//           &nbsp;Download CV
-//         </Button>
-//       </Row>
+      // <Row style={{ justifyContent: "center", position: "relative" }}>
+      //   <Button
+      //     variant="primary"
+      //     href={pdf}
+      //     target="_blank"
+      //     style={{ maxWidth: "250px" }}
+      //   >
+      //     <AiOutlineDownload />
+      //     &nbsp;Download CV
+      //   </Button>
+      // </Row>
 
       // <Row className="resume">
       //   <Document 
@@ -65,9 +65,12 @@
 
 // export default ResumeNew;
 import React, { useState } from "react";
-import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
+import pdf from "../../Assets/resume.pdf";
+
+import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../../Assets/Bala_Resume.pdf";
+
 
 function ResumeNew() {
   const [isLoading, setIsLoading] = useState(true);
@@ -77,21 +80,21 @@ function ResumeNew() {
   };
 
   return (
-    
-       
-    <Container fluid className="resume-section p-0">
-      <Row className="justify-content-center mb-4"> {/* Increased bottom margin */}
-      
-    
-        <Col xs="auto">
-          <Button variant="primary" href={pdf} target="_blank" className="mb-3"> {/* Added margin to button */}
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Col>
+    <Container fluid className="resume-section">
+      <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Button
+          variant="primary"
+          href={pdf}
+          target="_blank"
+          style={{ maxWidth: "250px" }}
+        >
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </Button>
       </Row>
-      <Row className="justify-content-center"> {/* Centering the row */}
-        <Col xs={12} md={10} lg={8}> {/* Control column width on larger screens */}
+      <br/>
+      <Row className="justify-content-center">
+        <Col xs={12} md={10} lg={8} style={{ paddingBottom: "50px" }}> {/* Extra bottom padding */}
           {isLoading && (
             <div className="text-center mb-3">
               <Spinner animation="border" role="status">
@@ -100,25 +103,25 @@ function ResumeNew() {
             </div>
           )}
           <iframe
-            src={pdf}
-            width="100%"
-            height="700" // Increased height for more space
+            src={`${pdf}#toolbar=0`}
+            width="80%"
+            height="1058x" // Adjust height as needed
             title="Resume PDF"
             onLoad={handleLoad}
             style={{ 
-              border: "none", 
-              borderRadius: "8px", 
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              marginBottom: "20px" // Added space below the iframe
+              border: "none",
             }} 
           />
         </Col>
       </Row>
-//     </Container>
+   </Container>
   );
 }
 
 export default ResumeNew;
+
+
+
 // import React, { useState, useEffect } from "react";
 // import { Container, Row, Col, Button, Spinner } from "react-bootstrap"; // Added Col here
 // import Particle from "../Particle";
@@ -140,22 +143,22 @@ export default ResumeNew;
 //     setIsLoading(false); // Set loading to false when PDF is loaded
 //   };
 
-//   return (
-//     <Container fluid className="resume-section">
-//       <Particle />
+  // return (
+  //   <Container fluid className="resume-section">
+  //     <Particle />
 
-//       {/* Top Download Button */}
-//       <Row style={{ justifyContent: "center", position: "relative" }}>
-//         <Button
-//           variant="primary"
-//           href={Pdf}
-//           target="_blank"
-//           style={{ maxWidth: "250px" }}
-//         >
-//           <AiOutlineDownload />
-//           &nbsp;Download CV
-//         </Button>
-//       </Row>
+  //     {/* Top Download Button */}
+  //     <Row style={{ justifyContent: "center", position: "relative" }}>
+  //       <Button
+  //         variant="primary"
+  //         href={Pdf}
+  //         target="_blank"
+  //         style={{ maxWidth: "250px" }}
+  //       >
+  //         <AiOutlineDownload />
+  //         &nbsp;Download CV
+  //       </Button>
+  //     </Row>
 
 //       {/* PDF Document Rendering */}
 //       <Row className="justify-content-center"> {/* Centering the row */}
