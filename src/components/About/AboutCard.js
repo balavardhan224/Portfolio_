@@ -8,13 +8,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi , I am <span className="purple">Balavardhan Reddy Malyala </span>
-            from <span className="purple"> India.</span>
-            <br /> 
-            I am a masters student at <span className="purple"> Southeast Missouri State University, Cape Girardeau, MO, USA.</span> <br />
-            I have completed my Bachelors in Computer Science at IARE, India.
+            Hello, my name is <span className="purple">Balavardhan Reddy Malyala</span>. I am a software developer who recently completed my Master of Science in Applied Computer Science at <span className="purple">Southeast Missouri State University, USA</span>.
             <br />
-            Apart from coding, some other activities that I love to do!
+            I am currently working as a Software Developer at <span className="purple">S&P Global, USA</span>.
+            <br />
+            Outside of coding, here are some activities I enjoy:
           </p>
           <ul>
             <li className="about-activity">
@@ -24,10 +22,10 @@ function AboutCard() {
               <ImPointRight /> Playing Squash
             </li>
             <li className="about-activity">
-              <ImPointRight /> Basket Ball
+              <ImPointRight /> Basketball
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Traveling
             </li>
             <li className="about-activity">
               <ImPointRight /> Meditation
@@ -35,7 +33,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Day by day, you’re growing stronger—keep pushing further. "{" "}
+            "Day by day, you’re growing stronger—keep pushing further."
           </p>
           <footer className="blockquote-footer">Bala</footer>
         </blockquote>

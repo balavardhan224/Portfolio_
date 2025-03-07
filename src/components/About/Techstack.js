@@ -11,14 +11,18 @@ import {
   DiJava,
 } from "react-icons/di";
 import {
-  SiNextdotjs,
   SiTailwindcss,
-  SiTypescript,
   SiPostgresql,
   SiOracle,
   SiFirebase,
+  SiSpringboot,
+  SiKubernetes,
+  SiMysql,
+  SiJenkins,
+  SiHibernate,
+  SiDocker
 } from "react-icons/si";
-import { FaCloudflare, FaDocker, FaAws, FaCloud } from "react-icons/fa";
+import { FaAws, FaCloud, FaAngular } from "react-icons/fa";
 
 function Techstack() {
   return (
@@ -64,6 +68,36 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaAngular />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSpringboot />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiHibernate />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMysql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJenkins />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span>Microservices</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span>API</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span>CI/CD</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
